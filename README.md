@@ -1,10 +1,10 @@
 # GCDSS - Generalized Category Discovery in Semantic Segmentation
 
-Welcome to the official repository for the Generalized Category Discovery in Semantic Segmentation (GCDSS) project!
+Welcome to the official repository for the [Generalized Category Discovery in Semantic Segmentation (GCDSS)](https://arxiv.org/abs/2311.11525) project!
 
 ## Overview
 
-This repository contains the code implementation for GCDSS. We are currently in the process of organizing and refining the codebase to make it more user-friendly.
+This repository contains the code implementation for GCDSS. We are currently in the process of organizing and refining the codebase to make it more user-friendly. This work is led by [Dr. Xin Tan (ECNU)](https://tanxincs.github.io/).
 
 ## Status: Code Not Yet Released
 
