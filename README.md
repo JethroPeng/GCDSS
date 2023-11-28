@@ -36,6 +36,5 @@ This repository contains the code implementation for GCDSS. We are currently in 
 ## Contact
 
 For inquiries or further information, contact: pengzhengyuan@sjtu.edu.cn
-```
 
 Happy coding!
