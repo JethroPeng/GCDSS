@@ -20,16 +20,16 @@ def preprocessing_cs():
     os.makedirs(gtFine_gcd, exist_ok=True)
     os.makedirs(leftImg8bit_gcd, exist_ok=True)
 
-    for split in ['train', 'val']:
-        for split in os.listdir(leftImg8bit_dir):
-            split_dir = os.path.join(leftImg8bit_dir, split)
-            for city in tqdm(os.listdir(split_dir), desc='copying img in {}'.format(split)):
-                city_dir = os.path.join(split_dir, city)
-                for img_name_suffix in os.listdir(city_dir):
-                    img_path = os.path.join(city_dir, img_name_suffix)
-                    img = Image.open(img_path)
-                    img_path_gcd = os.path.join(leftImg8bit_gcd, img_name_suffix)
-                    img.save(img_path_gcd)
+    #for split in ['train', 'val']:
+    #    for split in os.listdir(leftImg8bit_dir):
+    #        split_dir = os.path.join(leftImg8bit_dir, split)
+    #        for city in tqdm(os.listdir(split_dir), desc='copying img in {}'.format(split)):
+    #            city_dir = os.path.join(split_dir, city)
+    #            for img_name_suffix in os.listdir(city_dir):
+    #                img_path = os.path.join(city_dir, img_name_suffix)
+    #                img = Image.open(img_path)
+    #                img_path_gcd = os.path.join(leftImg8bit_gcd, img_name_suffix)
+    #                img.save(img_path_gcd)
 
     for split in ['train', 'val']:
         split_dir = os.path.join(gtFine_dir, split)

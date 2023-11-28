@@ -30,7 +30,8 @@ class Cityscapes_GCD(Dataset):
         if split_path != None:
             self.split_path = split_path
         else:
-            self.split_path = os.path.join(self.root, 'split', self.image_set + '_gcd_novel' + novel_class_str + '.txt')
+            self.split_path = os.path.join(self.root , 'split', self.image_set + '_gcd_novel' + novel_class_str + '.txt')
+        print(self.split_path)
         
         if not os.path.exists(self.split_path):
             raise ValueError("Wrong split_path")
@@ -56,6 +57,7 @@ class Cityscapes_GCD(Dataset):
                            5: 'pole', 6: 'traffic light', 7: 'traffic sign', 8: 'vegetation', 
                            9: 'terrain', 10: 'sky', 11: 'person', 12: 'rider', 13: 'car', 
                            14: 'truck', 15: 'bus', 16: 'train', 17: 'motorcycle', 18: 'bicycle'}
+        self.class_base_num = 15
         self.class_num = 19
 
         self.novel_class_list = np.array(novel_class_list, dtype=np.int64)

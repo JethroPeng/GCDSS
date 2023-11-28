@@ -4,12 +4,38 @@ Welcome to the official repository for the [Generalized Category Discovery in Se
 
 ## Overview
 
-This repository contains the code implementation for GCDSS. We are currently in the process of organizing and refining the codebase to make it more user-friendly. This work is led by [Dr. Xin Tan (ECNU)](https://tanxincs.github.io/).
+This repository contains the code implementation for GCDSS. We are currently in the process of organizing and refining the codebase to make it more user-friendly. Currently, this is a preview version, and continuous optimization of the code will follow. This work is led by [Dr. Xin Tan (ECNU)](https://tanxincs.github.io/).
 
-## Status: Code Not Yet Released
+## Usage Instructions
 
-We understand that many of you are eager to explore the code, and we are excited to share it with you. Please stay tuned for updates on the release. If you have any specific inquiries or if you urgently need access to the code, feel free to contact us at [pengzhengyuan@sjtu.edu.cn](mailto:pengzhengyuan@sjtu.edu.cn).
+### Preparing the Dataset
 
-Thank you for your patience and understanding.
+1. Place the Cityscapes dataset in the following directory:
+   ```
+   datasets/Cityscapes
+   ```
+
+2. Run the preprocessing script:
+   ```python
+   python preprocess.py
+   ```
+
+### Running the Main Program
+
+- After preprocessing the data, you can run the main script:
+  ```python
+  python main.py
+  ```
+
+## To-Do
+
+1. Organize and refine the self-training related code to enhance clarity and functionality.
+2. Further streamline the code to make it more user-friendly.
+
+
+## Contact
+
+For inquiries or further information, contact: pengzhengyuan@sjtu.edu.cn
+```
 
 Happy coding!
