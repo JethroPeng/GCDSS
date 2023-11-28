@@ -27,6 +27,7 @@ def load_mask_model(model_name,device):
 def load_feature_model(model_name,device):
     model_list = ['clip','ovseg','dinov1','dinov2','sam']
     # The model weights below all utilize the best open-source weights known to me.
+    # Can be adjusted according to requirements
     if model_name not in model_list:
         raise ValueError("Model Error")
     print("load "+model_name) 
